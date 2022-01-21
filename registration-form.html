@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			background-color: lightblue;
+			}
+		.whole_reg{
+			font-family: arial;
+			width: 50%;
+			margin-left: 300px;	
+				}
+		.reg{
+			border-top: 10px solid blue;
+			background-color: white;
+			padding: 20px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			
+			}
+		.edit,.edit1,.edit2{
+			background-color: white;
+			padding: 20px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			border:2px solid lightgrey;
+					}
+		
+		#req{color: red;}
+		
+		label{
+			text-indent: 10px:
+			}
+		input{
+			border: none;
+			border-bottom: solid 2px lightgrey; 
+		}
+		span{
+			color: red;
+			padding: 5px;
+		}
+		.foot{
+			display: flex;
+			justify-content: flex-start;
+		}
+		#submit{
+			color: white;
+			background-color: #0094ff;
+			border-radius: 10px;
+			margin-bottom: 2px;
+			margin-right: 70px;
+			width: 100px;
+			height: 40px;
+		}
+		#progress{
+			margin-top: 15px;
+			margin-right: 20px;
+			width: 30%;
+			}
+		#clear{
+			border-radius: 10px;
+			background-color: lightblue;
+			width: 100px;
+			height: 40px;
+			margin-left: 70px;
+			border: none;
+			}
+			#clear:hover{
+				background-color: blue;
+				color: white;
+			}
+			#pg{
+				font-size: 15px;
+				display: inline-block;
+				padding: 0px 5px 5px 0px;
+
+			}
+	</style>
+</head>
+<body>
+<div  class="whole_reg">
+	<div class="reg">
+		<h1>Codetrain Registration Form</h1>
+		<p>This form is the first to register for Codetrain's program starting on 25th July 2020.</p>
+		<p>Our admission team will reach out to you after successfully submitting your form.</p>
+		<p style="color: grey"><strong>stayornu@ug.edu.gh</strong> <a href="" style="color:#0094ff"><strong>switch account</strong></a></p>
+		<p id="req">*Required</p>
+	</div>
+
+	<div class="edit">
+	<label for="email"> Email<span>*</span></label><br><br>
+	<input type="Email" placeholder="Your email" required>
+	</div>
+
+	<div class="edit">
+		<label for="Fullname">Fullname<span>*</span></label><br><br>
+		<input type="text" name="Fullname" placeholder="Your answer" required>
+	</div>
+
+	<div class="edit">
+		<label for="phone_number">Phone Number<span>*</span></label><br><br>
+		<input type="number" name="phone_number" placeholder="Your answer" required>
+	</div>
+	<div class="edit">
+		<label for="nextofk_num">Phone number of next if kin</label><br>
+		<p>Phone number of someone we can reach out to in case your phone is off or not reachable Eg. your parent,guardian or sibling, or spouse</p><br><br>
+		<input type="number" name="next" placeholder="Your answer">
+	</div>
+	<div class="edit1">
+		<p>Can you pay 60% or more of the full Codetrain fees (GHS6000 for Ghanaian applicants or $1200 for international applicants)<span>*</span></p><br>
+		<input type="radio" name="decide" value="No" required>  No
+		<br><br>
+		<input type="radio" name="decide" value="Yes" required>  Yes
+	</div>
+	<div class="edit1">
+		<label >Please indicate who is going to pay your fees<span>*</span></label><br><br>
+		<input type="radio" name="person" value="Yourself" required>  Yourself<br><br>
+		<input type="radio" name="person" value="Parent">  Parent/Sponsor<br><br>
+		<input type="radio" name="person" value="Organization" required>  Organization<br>
+	</div>
+
+	<div class="edit2">
+		<label >Location<span>*</span></label><br><br>
+		<input type="text" name="Location" placeholder="Your answer" required>
+	</div>
+
+	<div class="edit2">
+		<label> Current or previous school<span>*</span></label><br><br>
+		<input type="text" name="school" placeholder="Your answer">
+	</div>
+	<div class="edit2">
+		<label>Why do you want to join Codetrain</label><br><br>
+		<input type="text" name="why_Codetrain" placeholder="Your answer" required>
+	</div>
+	<div class="edit2">
+		<label>How did you hear about Codetrain<span>*</span></label><br><br>
+		<input type="text" name="about_codetrain" placeholder="Your answer"required>
+	</div>
+	<br><br>
+	<p>A copy of your responses will be emailed to the address you provided</p>
+	<div class="foot">
+		<input id="submit"type="submit" name="submit" >
+		<progress value="50" max="50" id="progress"></progress>
+		<p id="pg">Page 1 of 1</p>
+		<input type="button" name="clear" id="clear" value="clear form">
+		
+	</div>
+</div>
+
+
+</body>
+</html>
